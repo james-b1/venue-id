@@ -16,7 +16,7 @@ with st.container():
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        st.image("./images/james.jpg", width=150)
+        st.image("../images/james.jpg", width=150)
         st.write("James Butts")
         with st.expander("See More!"):
             st.write('''
