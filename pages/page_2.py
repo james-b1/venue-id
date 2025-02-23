@@ -16,7 +16,7 @@ with st.container():
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        st.image("images/james.jpg", width=150)
+        st.image("./images/james.jpg", width=150)
         st.write("James Butts")
         with st.expander("See More!"):
             st.write('''
@@ -32,7 +32,7 @@ with st.container():
             
 
     with col2:
-        st.image("images/sai.jpg", width=150)
+        st.image("../images/sai.jpg", width=150)
         st.write("Avyukth Rangarajan")
         with st.expander("See More!"):
             st.write('''
@@ -44,7 +44,7 @@ with st.container():
             st.link_button("LinkedIn", "https://www.linkedin.com/in/sai-rangarajan/")
 
     with col3:
-        st.image("images/sky.jpg", width=150)
+        st.image("../images/sky.jpg", width=150)
         st.write("Sky Sie")
         with st.expander("See More!"):
             st.write('''
@@ -58,7 +58,7 @@ with st.container():
             st.link_button("LinkedIn", "https://www.linkedin.com/in/sky-sie-49489b2a1/")
 
     with col4:
-        st.image("images/thomas.jpg", width=150)
+        st.image("../images/thomas.jpg", width=150)
         st.write("Thomas Sobodosh")
         with st.expander("See More!"):
             st.write('''
