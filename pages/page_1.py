@@ -35,7 +35,7 @@ model = genai.GenerativeModel(
                     the expected audience amount. Make sure you Consider the hours of operation and holidays. If the location is 
                     unavailable, please provide an explanation why under an additional 'Note:' heading in the provided format.
                     
-                    Provide each of the venues in the following format with each heading on new line and bold headings, and give a short description of the venue before. Separate each option with 4 lines of space: 
+                    Provide each of the venues in the following format with each heading bolded, and give a short description of the venue before. Separate each option with 4 lines of space: 
                     Venue:
 
                     Address: 
