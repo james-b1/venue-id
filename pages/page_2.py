@@ -1,6 +1,12 @@
 import streamlit as st
+import os
 
 st.set_page_config(page_title="Venue ID", page_icon="images/icon.png", layout="wide")
+
+image_path1 = "images/james.jpg"
+image_path2 = "images/sai.jpg"
+image_path3 = "images/sky.jpg"
+image_path4 = "images/thomas.jpg"
 
 with st.container():
     if st.button("Return Home", icon="🏠"):
@@ -16,7 +22,10 @@ with st.container():
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        st.image("./images/james.jpg", width=150)
+        if os.path.exists(image_path1):
+            st.image(image_path1, width=150)
+        else:
+            st.error(f"File not found: {image_path1}")
         st.write("James Butts")
         with st.expander("See More!"):
             st.write('''
@@ -32,7 +41,11 @@ with st.container():
             
 
     with col2:
-        st.image("./images/sai.jpg", width=150)
+        #st.image("images/sai.jpg", width=150)
+        if os.path.exists(image_path2):
+            st.image(image_path2, width=150)
+        else:
+            st.error(f"File not found: {image_path2}")
         st.write("Avyukth Rangarajan")
         with st.expander("See More!"):
             st.write('''
@@ -44,7 +57,11 @@ with st.container():
             st.link_button("LinkedIn", "https://www.linkedin.com/in/sai-rangarajan/")
 
     with col3:
-        st.image("./images/sky.jpg", width=150)
+        #st.image("images/sky.jpg", width=150)
+        if os.path.exists(image_path3):
+            st.image(image_path3, width=150)
+        else:
+            st.error(f"File not found: {image_path3}")
         st.write("Sky Sie")
         with st.expander("See More!"):
             st.write('''
@@ -58,7 +75,11 @@ with st.container():
             st.link_button("LinkedIn", "https://www.linkedin.com/in/sky-sie-49489b2a1/")
 
     with col4:
-        st.image("./images/thomas.jpg", width=150)
+        #st.image("images/thomas.jpg", width=150)
+        if os.path.exists(image_path4):
+            st.image(image_path4, width=150)
+        else:
+            st.error(f"File not found: {image_path4}")
         st.write("Thomas Sobodosh")
         with st.expander("See More!"):
             st.write('''
