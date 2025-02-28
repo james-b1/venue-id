@@ -29,7 +29,7 @@ model = genai.GenerativeModel(
                     You will be given the time of the 
                     event in Eastern Standard Time. Based on this information, locate the best 3 specific venues that 
                     would accommodate the specified event type with 
-                    the expected audience amount. Make sure you Consider the hours of operation and holidays. If the location is 
+                    the expected audience amount. Make sure you consider the hours of operation and holidays. If the location is 
                     unavailable, please provide an explanation why under an additional 'Note:' heading in the provided format.
                     
                     Provide each of the venues in the following format with each heading bolded, and give a short description of the venue before: 
